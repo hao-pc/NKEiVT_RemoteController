@@ -1,0 +1,9 @@
+Открываем Anaconda Prompt
+
+Пишем:
+conda env create -f environment.yml
+или
+conda env create -f "patch\environment.yml"
+
+После полной установки пишем:
+conda activate tf_2
