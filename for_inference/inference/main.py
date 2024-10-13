@@ -204,7 +204,7 @@ def main():
     clf = classif()
 
     st = time.time()
-    audio_file = r"inference\2d6f5040-76fe-11ee-b168-c09bf4619c03.mp3"
+    audio_file = "2d6f5040-76fe-11ee-b168-c09bf4619c03.mp3"
     
     # Получаем текст и метки
     text = trn.predict(audio_file)

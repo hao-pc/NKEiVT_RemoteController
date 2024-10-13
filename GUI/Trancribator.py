@@ -19,10 +19,10 @@ class Trancribator:
     
     def __init__(self):
         self.recognizer = sherpa_onnx.OfflineRecognizer.from_transducer(
-                encoder=r"reshenie\am\encoder.onnx",
-                decoder=r"reshenie\am\decoder.onnx",
-                joiner=r"reshenie\am\joiner.onnx",
-                tokens=r"reshenie\lang\tokens.txt",
+                encoder=r"am\encoder.onnx",
+                decoder=r"am\decoder.onnx",
+                joiner=r"am\joiner.onnx",
+                tokens=r"lang\tokens.txt",
                 num_threads=4,
                 sample_rate=16000,
                 decoding_method="greedy_search")

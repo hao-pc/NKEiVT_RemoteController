@@ -9,10 +9,10 @@ from pydub import AudioSegment
 class Trancribator:
     def __init__(self):
         self.recognizer = sherpa_onnx.OfflineRecognizer.from_transducer(
-                encoder=r"inference\am\encoder.onnx",
-                decoder=r"inference\am\decoder.onnx",
-                joiner=r"inference\am\joiner.onnx",
-                tokens=r"inference\lang\tokens.txt",
+                encoder=r"am\encoder.onnx",
+                decoder=r"am\decoder.onnx",
+                joiner=r"am\joiner.onnx",
+                tokens=r"lang\tokens.txt",
                 num_threads=4,
                 sample_rate=16000,
                 decoding_method="greedy_search")

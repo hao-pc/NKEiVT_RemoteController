@@ -4,10 +4,10 @@ import pickle
 
 class classif:
     def __init__(self):
-        self.model = tf.keras.models.load_model("inference\Models\command_classifire.h5")
-        with open(r'inference\Models\tokenizer.pickle', 'rb') as handle:
+        self.model = tf.keras.models.load_model("Models\command_classifire.h5")
+        with open(r'Models\tokenizer.pickle', 'rb') as handle:
             self.tokenizer = pickle.load(handle)
-        with open(r'inference\Models\attribute_dict.pickle', 'rb') as handle:
+        with open(r'Models\attribute_dict.pickle', 'rb') as handle:
             self.attribute_dict = pickle.load(handle)
     def predict(self, text):
         u_text = []

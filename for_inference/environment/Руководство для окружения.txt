@@ -3,7 +3,7 @@
 Пишем:
 conda env create -f environment.yml
 или
-conda env create -f "patch\environment.yml"
+conda env create -f "path\environment.yml"
 
 После полной установки пишем:
-conda activate tf_2
+conda activate tf
